@@ -306,9 +306,13 @@ h4 {
     .nosotros p {
         text-align: center;
         margin-top: 45px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .nosotros__dos {
         margin-top: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .box__uno:hover {
         width: 50%;
@@ -324,16 +328,6 @@ h4 {
     }
 }
 
-@media (max-width: 991px) {
-        .nosotros p {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .nosotros__dos {
-       margin-left: 10px;
-       margin-right: 10px;
-    }
-}
 
 
 /*Resto del Css*/
