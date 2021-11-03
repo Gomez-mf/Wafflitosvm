@@ -1,0 +1,27 @@
+/*Responsive*/
+
+@media(max-width:991px) {
+    .nosotros {
+        grid-template-columns: 100%;
+        grid-template-rows: 25%;
+        p {
+            text-align: center;
+            margin-top: 45px;
+        }
+    }
+    .nosotros__dos {
+        margin-top: auto;
+    }
+    .box__uno:hover {
+        width: 50%;
+    }
+    .box__dos:hover {
+        width: 50%;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-brand {
+        position: relative;
+    }
+}
