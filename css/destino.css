@@ -324,6 +324,17 @@ h4 {
     }
 }
 
+@media (max-width: 991px) {
+        .nosotros p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nosotros__dos {
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+}
+
 
 /*Resto del Css*/
 
