@@ -1,15 +1,23 @@
 {
-    "name": "clase",
+    "name": "proyecto",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build-css": "node-sass --include-path scss scss/origen.scss css/destino.css",
+        "build-css": "node-sass --include-path scss scss/styles.scss css/estilos.css",
         "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Gomez-mf/wafflitosvm.git"
     },
     "author": "",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Gomez-mf/wafflitosvm/issues"
+    },
+    "homepage": "https://github.com/Gomez-mf/wafflitosvm#readme",
     "devDependencies": {
         "node-sass": "^6.0.1",
         "nodemon": "^2.0.14"
