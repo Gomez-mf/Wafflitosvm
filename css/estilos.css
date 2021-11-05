@@ -228,9 +228,11 @@ h3 {
     grid-template-rows: 25%; }
     .nosotros p {
       text-align: center;
-      margin-top: 45px; }
+      margin-left: 10px;
+      margin-right: 10px; }
   .nosotros__dos {
-    margin-top: auto; }
+    margin-left: 10px;
+    margin-right: 10px; }
   .box__uno:hover {
     width: 50%; }
   .box__dos:hover {
@@ -241,6 +243,10 @@ h3 {
     position: relative; } }
 
 /*Resto del Css*/
+hr {
+  height: 50px;
+  background-color: crimson; }
+
 .textos {
   font-weight: bold;
   text-align: center;
