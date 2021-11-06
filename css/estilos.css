@@ -25,7 +25,6 @@ header {
 
 .container-fluid {
   background-color: #f3eadb;
-  border-top: solid, 5px, #f3eadb;
   box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.425); }
 
 .navbar-brand {
