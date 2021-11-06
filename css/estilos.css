@@ -8,6 +8,9 @@
 body {
   background-color: #f3eadb; }
 
+header {
+  width: 100%; }
+
 /*Menu y header*/
 .navbar-light .navbar-nav .nav-link {
   color: #b1575a;
@@ -17,7 +20,8 @@ body {
   font-size: 20px;
   background-color: #f3eadb;
   color: red;
-  border-radius: 10px 10px 10px 10px; }
+  border-bottom: 3px solid red;
+  padding: 5px; }
 
 .container-fluid {
   background-color: #f3eadb;
@@ -32,12 +36,6 @@ body {
 
 .bg-light {
   --bs-bg-opacity: none;
-  background-color: #f3eadb; }
-
-p {
-  color: #b1575a; }
-
-.princial {
   background-color: #f3eadb; }
 
 .principal__textos {
@@ -60,7 +58,6 @@ p {
     margin: auto;
     margin-bottom: 30px; }
   .nosotros p {
-    text-align: center;
     margin-right: 10px; }
 
 .nosotros__dos {
@@ -77,15 +74,6 @@ h3 {
   border: 3px dashed #de9b20;
   margin-bottom: 15px; }
 
-.botonCard {
-  background-color: #835d5b;
-  border-color: #835d5b; }
-
-.botonCard:hover {
-  color: #835d5b;
-  background-color: white;
-  border-color: #835d5b; }
-
 .frutales {
   color: #fc3e20; }
 
@@ -95,16 +83,15 @@ h3 {
 .personalizado {
   color: #cc4200; }
 
-.galeria {
-  display: flex;
-  flex-flow: row wrap;
-  justify-items: center;
-  justify-content: center;
-  margin-top: 35px; }
-  .galeria img {
-    padding: 0 50px 50px;
-    margin-bottom: 15px;
-    border: 3px dashed #de9b20; }
+.jyq {
+  color: #e49d7b; }
+
+.rucula {
+  color: #9d4f3d; }
+
+.lineas {
+  background-color: #fff;
+  border-top: 3px dashed #de9b20; }
 
 /*Para regalar*/
 .contenedor {
@@ -163,15 +150,33 @@ h3 {
   opacity: 1;
   visibility: visible; }
 
-.botonCajas {
+.botonGral {
   background-color: #271918;
   border-color: #271918;
   color: #b1575a;
   margin-bottom: 15px; }
 
-.botonCajas:hover {
+.botonGral:hover {
   background-color: #b1575a;
+  border-color: #b1575a;
   color: #271918; }
+
+/*Promociones*/
+.galeria {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  justify-content: space-around;
+  margin-top: 35px;
+  margin-bottom: 35px; }
+  .galeria img {
+    padding: 0 25px 25px;
+    border-radius: 5px; }
+
+.promo {
+  border: 3px dashed #de9b20;
+  background-color: white;
+  text-align: center; }
 
 /*Pedidos*/
 .formulario {
@@ -198,7 +203,8 @@ h3 {
 .footer {
   height: 100%;
   background-color: #271918;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 5px; }
 
 .footer__textos {
   justify-content: center;
@@ -208,14 +214,14 @@ h3 {
 
 .fa-facebook {
   color: white;
-  margin-top: 10px; }
+  margin-top: 5px; }
 
 .fa-facebook:hover {
   color: #835d5b; }
 
 .fa-instagram {
   color: white;
-  margin-top: 10px; }
+  margin-top: 5px; }
 
 .fa-instagram:hover {
   color: #835d5b; }
@@ -223,6 +229,10 @@ h3 {
 /*Responsive*/
 /*Responsive*/
 @media (max-width: 991px) {
+  .principal__textos {
+    margin-top: 25px; }
+  .navbar-brand {
+    position: relative; }
   .nosotros {
     grid-template-columns: 100%;
     grid-template-rows: 25%; }
@@ -230,19 +240,48 @@ h3 {
       text-align: center;
       margin-left: 10px;
       margin-right: 10px; }
+  .nosotros__textos {
+    margin-top: 25px; }
   .nosotros__dos {
     margin-left: 10px;
     margin-right: 10px; }
   .box__uno:hover {
     width: 50%; }
   .box__dos:hover {
-    width: 50%; } }
+    width: 50%; }
+  .promo {
+    margin-bottom: 10px; }
+  p {
+    margin-left: 5px;
+    margin-right: 5px; } }
 
-@media (max-width: 991px) {
-  .navbar-brand {
-    position: relative; } }
+@media (max-height: 991px) {
+  .nosotros__textos {
+    margin-top: 55px; } }
 
-/*Resto del Css*/
+/*Textos en general*/
+h1 {
+  color: #de9b20; }
+
+h2 {
+  color: #b1575a; }
+
+h3 {
+  color: #b1575a; }
+
+h4 {
+  color: red; }
+
+.navidad {
+  color: green; }
+
+p {
+  color: #b1575a;
+  font-size: 18px; }
+
+.centrar {
+  text-align: center; }
+
 hr {
   height: 50px;
   background-color: crimson; }
@@ -256,26 +295,8 @@ hr {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: underline;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-top: 10px; }
 
-h1 {
-  color: #de9b20; }
-
-p {
-  color: #b1575a;
-  font-size: 18px; }
-
-h2 {
-  color: #b1575a; }
-
-h3 {
-  color: #b1575a; }
-
-.centrar {
-  text-align: center; }
-
-.justificado {
-  text-align: justify; }
-
-.subrayado {
-  text-decoration: underline; }
+.tachado {
+  text-decoration: line-through; }

@@ -13,6 +13,10 @@ body {
     background-color: $colorFondo;
 }
 
+header {
+    width: 100%;
+}
+
 
 /*Menu y header*/
 
@@ -25,7 +29,8 @@ body {
     font-size: 20px;
     background-color: $colorFondo;
     color: red;
-    border-radius: 10px 10px 10px 10px;
+    border-bottom: 3px solid red;
+    padding: 5px;
 }
 
 .container-fluid {
@@ -43,27 +48,6 @@ body {
 
 .bg-light {
     --bs-bg-opacity: none;
-    background-color: $colorFondo;
-}
-
-//Condicional 
-$seccion: div;
-p {
-    @if $seccion==div {
-        color: $colorGral
-    }
-    @else if $seccion==article {
-        color: $colorDos
-    }
-    @else if $seccion==footer {
-        color: white;
-    }
-    @else {
-        color: royalblue
-    }
-}
-
-.princial {
     background-color: $colorFondo;
 }
 
@@ -91,7 +75,6 @@ p {
         margin-bottom: 30px;
     }
     p {
-        text-align: center;
         margin-right: 10px;
     }
 }
@@ -116,18 +99,7 @@ h3 {
     margin-bottom: 15px;
 }
 
-.botonCard {
-    background-color: #835d5b;
-    border-color: #835d5b;
-}
-
-.botonCard:hover {
-    color: #835d5b;
-    background-color: white;
-    border-color: #835d5b;
-}
-
-$colores: ( frutales: #fc3e20, golosinas: #91b100, personalizado: #cc4200, );
+$colores: ( frutales: #fc3e20, golosinas: #91b100, personalizado: #cc4200, jyq:#e49d7b, rucula:#9d4f3d);
 @each $nombre,
 $color in $colores {
     .#{$nombre} {
@@ -135,17 +107,9 @@ $color in $colores {
     }
 }
 
-.galeria {
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    img {
-        padding: 0 50px 50px;
-        margin-bottom: 15px;
-        border: 3px dashed $colorDos;
-    }
+.lineas {
+    background-color: #fff;
+    border-top: 3px dashed $colorDos;
 }
 
 
@@ -210,16 +174,39 @@ $color in $colores {
     visibility: visible;
 }
 
-.botonCajas {
+.botonGral {
     background-color: $fondoDos;
     border-color: $fondoDos;
     color: $colorGral;
     margin-bottom: 15px;
 }
 
-.botonCajas:hover {
+.botonGral:hover {
     background-color: $colorGral;
+    border-color: $colorGral;
     color: $fondoDos;
+}
+
+
+/*Promociones*/
+
+.galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    img {
+        padding: 0 25px 25px;
+        border-radius: 5px;
+    }
+}
+
+.promo {
+    border: 3px dashed $colorDos;
+    background-color: white;
+    text-align: center;
 }
 
 
@@ -257,6 +244,7 @@ $color in $colores {
     height: 100%;
     background-color: $fondoDos;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .footer__textos {
@@ -268,7 +256,7 @@ $color in $colores {
 
 .fa-facebook {
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .fa-facebook:hover {
@@ -277,7 +265,7 @@ $color in $colores {
 
 .fa-instagram {
     color: white;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .fa-instagram:hover {
@@ -289,7 +277,36 @@ $color in $colores {
 
 @import "responsive";
 
-/*Resto del Css*/
+/*Textos en general*/
+
+h1 {
+    color: #de9b20;
+}
+
+h2 {
+    color: $colorGral;
+}
+
+h3 {
+    color: $colorGral;
+}
+
+h4 {
+    color: red;
+}
+
+.navidad {
+    color: green;
+}
+
+p {
+    color: $colorGral;
+    font-size: 18px;
+}
+
+.centrar {
+    text-align: center;
+}
 
 hr {
     height: 50px;
@@ -307,33 +324,9 @@ hr {
     font-weight: bold;
     text-decoration: underline;
     font-size: 30px;
+    margin-top: 10px;
 }
 
-h1 {
-    color: #de9b20;
-}
-
-p {
-    color: $colorGral;
-    font-size: 18px;
-}
-
-h2 {
-    color: $colorGral;
-}
-
-h3 {
-    color: $colorGral;
-}
-
-.centrar {
-    text-align: center;
-}
-
-.justificado {
-    text-align: justify;
-}
-
-.subrayado {
-    text-decoration: underline;
+.tachado {
+    text-decoration: line-through;
 }
