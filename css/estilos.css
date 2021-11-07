@@ -258,10 +258,6 @@ h3 {
   .nosotros__textos {
     margin-top: 55px; } }
 
-@media (max-width: 654px) {
-  .nosotros__textos {
-    margin-top: 15px; } }
-
 /*Textos en general*/
 h1 {
   color: #de9b20; }
