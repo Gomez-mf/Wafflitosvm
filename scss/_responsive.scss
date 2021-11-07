@@ -17,7 +17,7 @@
             }
         }
         .nosotros__textos {
-            margin-top: 25px;
+            margin-top: 15px;
         }
         .nosotros__dos {
             margin-left: 10px;
@@ -30,7 +30,7 @@
             width: 50%;
         }
         .promo {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         p {
             margin-left: 5px;
@@ -41,5 +41,11 @@
     @media(max-height:991px) {
         .nosotros__textos {
             margin-top: 55px;
+        }
+    }
+    
+    @media(max-width:654px) {
+        .nosotros__textos {
+            margin-top: 15px;
         }
     }
