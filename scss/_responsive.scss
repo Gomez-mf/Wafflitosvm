@@ -10,14 +10,9 @@
         .nosotros {
             grid-template-columns: 100%;
             grid-template-rows: 25%;
-            p {
-                text-align: center;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
         }
         .nosotros__textos {
-            margin-top: 15px;
+            margin-top: 60px;
         }
         .nosotros__dos {
             margin-left: 10px;
@@ -35,11 +30,5 @@
         p {
             margin-left: 5px;
             margin-right: 5px;
-        }
-    }
-    
-    @media(max-height:991px) {
-        .nosotros__textos {
-            margin-top: 55px;
         }
     }
