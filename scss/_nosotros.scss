@@ -1,0 +1,24 @@
+/*Nosotros*/
+
+.nosotros {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    margin-top: 15px;
+    img {
+        border-radius: 15px;
+        border: solid 5px $colorGral;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+.nosotros__dos {
+    margin-top: 30px;
+}
+
+.nosotros__tres {
+    margin-top: 30px;
+}

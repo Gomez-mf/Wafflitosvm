@@ -1,0 +1,73 @@
+/*Estilos generales*/
+
+
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $colorFondo;
+}
+
+header {
+    width: 100%;
+}
+
+.titulos {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+p {
+    color: $colorGral;
+    font-size: 18px;
+}
+
+h1 {
+    color: $colorGral;
+}
+
+h2 {
+    color: $colorGral;
+}
+
+h3 {
+    color: $colorGral;
+}
+
+h4 {
+    color: red;
+}
+
+.navidad {
+    color: green;
+}
+
+.botonGral {
+    background-color: $fondoDos;
+    border-color: $fondoDos;
+    color: $colorGral;
+    margin-bottom: 15px;
+    &:hover {
+        background-color: $colorGral;
+        border-color: $colorGral;
+        color: $fondoDos;
+    }
+}

@@ -1,0 +1,39 @@
+/*Menú*/
+
+.container-fluid {
+    background-color: $colorFondo;
+    box-shadow: $sombra;
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: $colorGral;
+            font-size: 18px;
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link:hover {
+            font-size: 20px;
+            background-color: $colorFondo;
+            color: red;
+            border-bottom: 3px solid red;
+            padding: 5px;
+        }
+    }
+}
+
+.bg-light {
+    --bs-bg-opacity: none;
+    background-color: $colorFondo;
+}
+
+.navbar-brand {
+    position: absolute;
+    margin-top: 40px;
+    z-index: 40;
+    justify-content: center;
+}
