@@ -81,6 +81,18 @@ h4 {
   z-index: 40;
   justify-content: center; }
 
+.iconosMenu {
+  margin: 0px 5px; }
+
+.titulosNav {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  display: none; }
+
 /*Index*/
 .principalTextos {
   color: #b1575a;
@@ -88,8 +100,23 @@ h4 {
   font-weight: bold;
   text-decoration: underline; }
 
-.iconosMenu {
-  margin: 0px 5px; }
+.contenedorTestimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.caja {
+  width: 500px;
+  box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.425);
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer; }
+
+.nombreUsuario {
+  color: #b1575a; }
 
 /*footer*/
 .footer {
@@ -270,4 +297,11 @@ h4 {
     margin-bottom: 20px; }
   p {
     margin-left: 5px;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .titulosNav {
+    display: flex;
+    flex-flow: row wrap; }
+  .principalTextos {
+    display: none; }
+  .principalTextos-- {
+    display: block; } }

@@ -7,6 +7,24 @@
     text-decoration: underline;
 }
 
-.iconosMenu {
-    margin: 0px 5px;
+.contenedorTestimonios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.caja {
+    width: 500px;
+    box-shadow: $sombra;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    ;
+}
+
+.nombreUsuario {
+    color: $colorGral
 }
