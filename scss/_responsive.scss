@@ -43,3 +43,9 @@
             display: block;
         }
     }
+    
+    @media(max-width:653px) {
+        .titulosNav {
+            font-size: 10px;
+        }
+    }

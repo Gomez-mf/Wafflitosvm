@@ -78,8 +78,7 @@ h4 {
 .navbar-brand {
   position: absolute;
   margin-top: 40px;
-  z-index: 40;
-  justify-content: center; }
+  z-index: 40; }
 
 .iconosMenu {
   margin: 0px 5px; }
@@ -89,7 +88,7 @@ h4 {
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 20px;
   display: none; }
 
@@ -99,6 +98,10 @@ h4 {
   text-align: center;
   font-weight: bold;
   text-decoration: underline; }
+
+.principalTextos-- {
+  margin-top: 15px;
+  font-size: 20px; }
 
 .contenedorTestimonios {
   display: flex;
@@ -305,3 +308,7 @@ h4 {
     display: none; }
   .principalTextos-- {
     display: block; } }
+
+@media (max-width: 653px) {
+  .titulosNav {
+    font-size: 10px; } }
