@@ -117,9 +117,7 @@ h4 {
 .nosotros {
   display: grid;
   grid-template-rows: 50% 50%;
-  grid-template-columns: 50% 50%;
-  text-align: center;
-  margin-top: 15px; }
+  grid-template-columns: 50% 50%; }
   .nosotros img {
     border-radius: 15px;
     border: solid 5px #b1575a;
@@ -127,8 +125,13 @@ h4 {
     margin: auto;
     margin-bottom: 30px; }
 
+.nosotros__textos {
+  text-align: left;
+  margin-top: 15px; }
+
 .nosotros__dos {
-  margin-top: 30px; }
+  margin-top: 30px;
+  text-align: center; }
 
 .nosotros__tres {
   margin-top: 30px; }
@@ -251,10 +254,11 @@ h4 {
     grid-template-columns: 100%;
     grid-template-rows: 25%; }
   .nosotros__textos {
-    margin-top: 60px; }
-  .nosotros__dos {
-    margin-left: 10px;
-    margin-right: 10px; }
+    margin-top: 55px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .nosotros__tres {
+    margin: 0px 20px; }
   .box__uno:hover {
     width: 50%; }
   .box__dos:hover {

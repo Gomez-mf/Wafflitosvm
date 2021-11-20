@@ -4,8 +4,6 @@
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
-    text-align: center;
-    margin-top: 15px;
     img {
         border-radius: 15px;
         border: solid 5px $colorGral;
@@ -15,8 +13,14 @@
     }
 }
 
+.nosotros__textos {
+    text-align: left;
+    margin-top: 15px;
+}
+
 .nosotros__dos {
     margin-top: 30px;
+    text-align: center;
 }
 
 .nosotros__tres {
