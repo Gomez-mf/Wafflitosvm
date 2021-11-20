@@ -35,17 +35,12 @@
         .titulosNav {
             display: flex;
             flex-flow: row wrap;
+            margin-top: 40px;
         }
         .principalTextos {
             display: none;
         }
         .principalTextos-- {
             display: block;
-        }
-    }
-    
-    @media(max-width:653px) {
-        .titulosNav {
-            font-size: 10px;
         }
     }
