@@ -1,17 +1,14 @@
 /*Index*/
 
-@mixin textos {
+.principalTextos {
     color: $colorGral;
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.principalTextos {
-    @include textos
-}
-
 .principalTextos-- {
+    font-weight: bold;
     margin-top: 15px;
     font-size: 20px;
 }

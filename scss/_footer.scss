@@ -14,7 +14,7 @@
     text-decoration: underline;
 }
 
-.fa-facebook {
+@mixin botonesFooter {
     color: white;
     margin-top: 5px;
     &:hover {
@@ -22,10 +22,10 @@
     }
 }
 
+.fa-facebook {
+    @include botonesFooter;
+}
+
 .fa-instagram {
-    color: white;
-    margin-top: 5px;
-    &:hover {
-        color: #835d5b;
-    }
+    @include botonesFooter;
 }
