@@ -309,4 +309,6 @@ h4 {
   .principalTextos {
     display: none; }
   .principalTextos-- {
-    display: block; } }
+    display: block; }
+  .caja {
+    width: 275px; } }
